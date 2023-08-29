@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Veterans Hoquei Patins FBC</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/logo-basquet.png" alt="" width="90" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-semibold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="contact.html"
+                class="nav-link btn btn-outline-light fw-semibold px-4 mx-4"
+                >Contacte</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <!-- Hero -->
+      <div class="hero text-white pt-6 pb-2">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-12">
+              <h1>Informació de contacte</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact bg-light pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pt-4">
+            <form action="https://formspree.io/f/mrgvnzvq" method="POST">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="name"
+                  placeholder="Nom i cognoms"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control form-control-lg"
+                  name="message"
+                  rows="4"
+                  placeholder="Missatge"
+                ></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary text-white mt-3">
+                  Envia
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="location my-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <h3>On ens trobem</h3>
+            <p class="mb-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid deserunt
+              recusandae iure officiis quia saepe at velit ad eum tenetur magnam, nihil
+              voluptate sit totam ut reiciendis iusto harum doloribus.
+            </p>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2667.082653831765!2d2.1198797544514036!3d41.3806298105058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCamp%20Nou!5e0!3m2!1ses-419!2ses!4v1690207585290!5m2!1ses-419!2ses"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social -->
+    <section class="social text-bg-dark py-4 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center fs-4">
+            <p>
+              Pots mantenir-te al dia dels events de l'associació a través de les nostres
+              xarxes socials.
+            </p>
+            <div class="social-icons d-flex justify-content-center gap-4">
+              <i class="fab fa-facebook fa-2x"></i>
+              <i class="fab fa-twitter fa-2x"></i>
+              <i class="fab fa-instagram fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-top border-primary bg-dark text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link link-light">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link link-light">Contacte</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="text-end d-none d-md-block">&copy; alexorpi2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
