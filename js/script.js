@@ -21,7 +21,6 @@ function scrollProgress() {
   const windowHeigh = window.innerHeight;
 
   const scrollPercentage = (currentScrollDistance / (totalPageHigh - windowHeigh)) * 100;
-  console.log('scrollPercentage', Math.round(scrollPercentage));
   scrollProgressEl.style.width = `${Math.round(scrollPercentage)}%`;
 }
 
