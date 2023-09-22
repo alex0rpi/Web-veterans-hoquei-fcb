@@ -1,6 +1,6 @@
 # Ebook Website
 
-Bootstrap website for downloading a free E-book. This website has a light, business-oriented design.
+Bootstrap website for downloading a free E-book.
 
 <img src="./images/screen.png"  />
 
@@ -36,6 +36,6 @@ To watch your Sass files for changes, run:
 npm run sass:watch
 ```
 
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
+One can add Bootstrap variables to the `bootstrap.scss` file. Just look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
 
-To add your own custom styles, use the `styles.scss` file.
+To add one's own custom styles, use the `styles.scss` file.
