@@ -32,12 +32,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link fw-semibold px-4 ms-auto">Home</a>
+              <a href="#inici" class="nav-link fw-semibold px-4 ms-auto">Inici</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link fw-semibold px-4 ms-auto"
-                >Contacte</a
+              <a href="#membres" class="nav-link fw-semibold px-4 ms-auto">Membres</a>
+            </li>
+            <li class="nav-item">
+              <a href="#temporades-recents" class="nav-link fw-semibold px-4 ms-auto"
+                >Temporades recents</a
               >
+            </li>
+            <li class="nav-item">
+              <a href="#location" class="nav-link fw-semibold px-4 ms-auto">On som</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacte" class="nav-link fw-semibold px-4 ms-auto">Contacte</a>
             </li>
           </ul>
         </div>
@@ -45,7 +54,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="inici">
       <!-- Hero -->
       <div class="hero text-white pt-7">
         <div class="container-xl">
@@ -158,11 +167,55 @@
       </div>
     </section>
 
-    <!-- Statement -->
-    <section class="statement mb-4">
+    <!-- Testimonis llibre -->
+    <section class="testimonials mb-4">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-md-4 text-center">
+            <img
+              src="images/ramon-pons.jpg"
+              alt=""
+              class="rounded-circle mb-3"
+              height="120px"
+            />
+            <p class="lead fst-italic">
+              "Aquest es el meu comentari sobre aquest llibre."
+            </p>
+            <p class="fw-bold">Ramon Pons, President de l'associació.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="images/antoni-orpinell.jpg"
+              alt=""
+              class="rounded-circle mb-3"
+              height="120px"
+            />
+            <p class="lead fst-italic">
+              "Aquest es el meu comentari sobre aquest llibre."
+            </p>
+            <p class="fw-bold">Antoni Orpinell, membre de la junta.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="images/carles-gallen.jpeg"
+              alt=""
+              class="rounded-circle mb-3"
+              height="120px"
+            />
+            <p class="lead fst-italic">
+              "Aquest es el meu comentari sobre aquest llibre."
+            </p>
+            <p class="fw-bold">Carles Gallén Utset</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statement -->
+    <section class="statement mb-4" id="temporades-recents">
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
             <div class="text-container bg-light p-5 rounded-5">
               <h2>Sumari de les temporades més recents.</h2>
               <p>
@@ -997,45 +1050,65 @@
       </div>
     </section>
 
-    <!-- Testimonis llibre -->
-    <section class="testimonials mb-8">
+    <!-- Contact Form -->
+    <section class="contact bg-light pb-4" id="contacte">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 text-center">
-            <img
-              src="images/ramon-pons.jpg"
-              alt=""
-              class="rounded-circle mb-3"
-              height="120px"
-            />
-            <p class="lead fst-italic">
-              "Aquest es el meu comentari sobre aquest llibre."
-            </p>
-            <p class="fw-bold">Ramon Pons, President de l'associació.</p>
+          <div class="col-10 pt-4">
+            <h1>Informació de contacte</h1>
+            <form action="https://formspree.io/f/mrgvnzvq" method="POST">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  name="name"
+                  placeholder="Nom i cognoms"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control form-control-lg"
+                  name="message"
+                  rows="4"
+                  placeholder="Missatge"
+                ></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary text-white mt-3">
+                  Envia
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="col-md-4 text-center">
-            <img
-              src="images/antoni-orpinell.jpg"
-              alt=""
-              class="rounded-circle mb-3"
-              height="120px"
-            />
-            <p class="lead fst-italic">
-              "Aquest es el meu comentari sobre aquest llibre."
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="location my-4" id="location">
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <h1>On ens trobem</h1>
+            <p class="mb-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid deserunt
+              recusandae iure officiis quia saepe at velit ad eum tenetur magnam, nihil
+              voluptate sit totam ut reiciendis iusto harum doloribus.
             </p>
-            <p class="fw-bold">Antoni Orpinell, membre de la junta.</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <img
-              src="images/carles-gallen.jpeg"
-              alt=""
-              class="rounded-circle mb-3"
-              height="120px"
-            />
-            <p class="lead fst-italic">
-              "Aquest es el meu comentari sobre aquest llibre."
-            </p>
-            <p class="fw-bold">Carles Gallén Utset</p>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2667.082653831765!2d2.1198797544514036!3d41.3806298105058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCamp%20Nou!5e0!3m2!1ses-419!2ses!4v1690207585290!5m2!1ses-419!2ses"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -1067,10 +1140,21 @@
           <div class="col-md-8">
             <ul class="nav">
               <li class="nav-item">
-                <a href="index.html" class="nav-link link-light">Home</a>
+                <a href="#inici" class="nav-link link-light">Inici</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link link-light">Contacte</a>
+                <a href="#membres" class="nav-link link-light">Membres</a>
+              </li>
+              <li class="nav-item">
+                <a href="#temporades-recents" class="nav-link link-light"
+                  >Temporades recents</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#location" class="nav-link link-light">On som</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacte" class="nav-link link-light">Contacte</a>
               </li>
             </ul>
           </div>
