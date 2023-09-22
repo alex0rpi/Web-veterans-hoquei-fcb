@@ -1,5 +1,16 @@
-.navbar .btn-outline-light:hover {
-  color: var(--bs-dark);
+.scroll-progress {
+  width: 0%;
+  background-color: rgb(180, 201, 86);
+  height: 5px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+
+.navbar .nav-item:hover {
+  text-decoration: underline 3px white;
+  text-underline-offset: 10px;
+  text-decoration-skip-ink: auto;
 }
 
 .navbar {
@@ -7,7 +18,7 @@
 }
 
 .navbar-sticky {
-  opacity: 0.9;
+  opacity: 0.95;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
