@@ -7,6 +7,11 @@
   left: 0;
 }
 
+.construction {
+  color: orangered;
+  font-weight: bold;
+}
+
 .navbar .nav-item:hover {
   text-decoration: underline 3px white;
   text-underline-offset: 10px;
