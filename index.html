@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,12 +22,17 @@
           <img src="images/logo-basquet.png" alt="" width="90" />
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto mt-3">
@@ -59,11 +64,11 @@
     <header class="header" id="inici">
       <!-- Hero -->
       <div class="hero text-white pt-7">
-        <div class="container-xl">
+        <div class="container">
           <div class="row">
             <div class="col-md-6">
               <div class="image-container mb-5 px-4 text-center">
-                <img src="images/llibre1.jpg" alt="" class="img-fluid" width="350px" />
+                <img src="images/llibre1.png" alt="" class="img-fluid" width="450px" />
               </div>
             </div>
             <div class="col-md-6">
@@ -97,7 +102,7 @@
 
     <!-- Icons -->
     <section class="icons bg-light pb-2">
-      <div class="container-xl">
+      <div class="container">
         <div class="row hstack g-4">
           <div class="col-md-4 d-flex gap-4">
             <i class="fa-solid fa-hockey-puck fa-3x text-primary"></i>
@@ -139,44 +144,20 @@
 
     <!-- Details -->
     <section id="details" class="details my-2">
-      <div class="container pt-4">
-        <h2 class="display-6 text-center">Text de títol</h2>
+      <div class="container pt-4 d-flex flex-column align-items-center">
+        <h1 class="display-6 text-center">Text de títol</h1>
         <p>
           Aquí podriem afegir imatges del contingut del llibre a mode de teaser. 3 o 4
           imatges, o les que vulguem. Lorem, ipsum dolor sit amet consectetur adipisicing
           elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="image-container p-4">
-              <img
-                src="images/description.png"
-                alt="image"
-                width="400px"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="image-container p-4">
-              <img
-                src="images/description.png"
-                alt="image"
-                width="400px"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="image-container p-4">
-              <img
-                src="images/description.png"
-                alt="image"
-                width="400px"
-                class="img-fluid"
-              />
-            </div>
-          </div>
+        <div class="image-container mb-4">
+          <img
+            src="images/llibre_obert.jpg"
+            alt="image"
+            width="500px"
+            class="img-fluid"
+          />
         </div>
       </div>
     </section>
@@ -229,46 +210,46 @@
     <!-- Statement -->
     <section class="statement mb-4" id="temporades-recents">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-10">
             <h1 class="text-center">Sumari de les temporades més recents.</h1>
-            <div class="text-container py-4 pt-1 rounded-5">
+            <div class="text-container py-4 pt-1">
               <p>
                 En els següents enllaços trobareu un resum dels principals esdeveniments
                 per a les temporades següents, redactat pel Carles Gallén.
               </p>
               <a
-                class="btn btn-primary text-white mt-4 align-self-start mx-3"
+                class="btn btn-primary text-white mt-4 d-inline-block mx-3"
                 data-bs-toggle="modal"
                 data-bs-target="#modal1"
                 >Temporada 2017/2018</a
               >
               <a
-                class="btn btn-primary text-white mt-4 align-self-start mx-3"
+                class="btn btn-primary text-white mt-4 d-inline-block mx-3"
                 data-bs-toggle="modal"
                 data-bs-target="#modal2"
                 >Temporada 2018/2019</a
               >
               <a
-                class="btn btn-primary text-white mt-4 align-self-start mx-3"
+                class="btn btn-primary text-white mt-4 d-inline-block mx-3"
                 data-bs-toggle="modal"
                 data-bs-target="#modal3"
                 >Temporada 2019/2020</a
               >
               <a
-                class="btn btn-primary text-white mt-4 align-self-start mx-3"
+                class="btn btn-primary text-white mt-4 d-inline-block mx-3"
                 data-bs-toggle="modal"
                 data-bs-target="#modal4"
                 >Temporada 2020/2021</a
               >
               <a
-                class="btn btn-primary text-white mt-4 align-self-start mx-3"
+                class="btn btn-primary text-white mt-4 d-inline-block mx-3"
                 data-bs-toggle="modal"
                 data-bs-target="#modal5"
                 >Temporada 2021/2022</a
               >
               <a
-                class="btn btn-primary text-white mt-4 align-self-start mx-3"
+                class="btn btn-primary text-white mt-4 d-inline-block mx-3"
                 data-bs-toggle="modal"
                 data-bs-target="#modal6"
                 >Temporada 2022/2023</a
@@ -1068,7 +1049,7 @@
     <!-- Map -->
     <section class="location my-4" id="location">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-10">
             <h1 class="text-center">On ens trobem</h1>
             <p class="mb-4">
@@ -1089,8 +1070,8 @@
 
     <!-- Contact Form -->
     <section class="contact bg-light pb-4" id="contacte">
-      <div class="container d-flex justify-content-center
-        <div class="row">
+      <div class="container">
+        <div class="row justify-content-center">
           <div class="col-10 pt-4">
             <h1 class="text-center">Contacte</h1>
             <form action="https://formspree.io/f/mzbljkgl" method="POST">
