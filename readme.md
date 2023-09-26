@@ -1,6 +1,6 @@
 # Bootstrap website for downloading a free pdf book.
 
-To visit the web in progres you can click on the temporary vercel domain page:
+To visit the web in progres you can click on the temporary vercel domain page: <br>
 https://web-llibre-veterans-hoquei-fcb.vercel.app/
 
 <img src="./images/llibre1.png.png"  />
