@@ -1,8 +1,9 @@
-# Ebook Website
+# Bootstrap website for downloading a free pdf book.
 
-Bootstrap website for downloading a free E-book.
+To visit the web in progres you can click on the temporary vercel domain page:
+https://web-llibre-veterans-hoquei-fcb.vercel.app/
 
-<img src="./images/screen.png"  />
+<img src="./images/llibre1.png.png"  />
 
 ## Features
 
