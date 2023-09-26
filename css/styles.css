@@ -1,3 +1,24 @@
+/* ------------------------------------- */
+/* CUSTOM SCROLL BARS */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d9dfe4;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5e7f97;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c93ae;
+}
+
+/* ------------------------------------- */
 .logo-image {
   border-radius: 8px;
 }
@@ -7,7 +28,7 @@
   background-color: rgb(180, 201, 86);
   height: 5px;
   position: fixed;
-  top: 100px;
+  top: 115px;
   left: 0;
 }
 
@@ -120,11 +141,6 @@
 
 .modal-dialog {
   max-width: 1040px;
-}
-
-.custom-scrollable {
-  max-height: 500px;
-  overflow-y: auto;
 }
 
 .download {
