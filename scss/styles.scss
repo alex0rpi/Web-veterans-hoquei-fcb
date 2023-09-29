@@ -24,14 +24,16 @@
   background-color: rgb(180, 201, 86);
   height: 5px;
   position: fixed;
-  top: 115px;
+  top: 100px;
   left: 0;
 }
 /* ------------------------------------- */
 
 .logo-image {
-  border-radius: 8px;
+  // border-radius: 8px;
   // margin: 0;
+  // increase brightness
+  filter: brightness(1.5);
 }
 
 .construction {
@@ -149,13 +151,13 @@
   background-size: cover;
 }
 
-.modal-dialog {
-  max-width: 1040px;
-}
-
 .download {
   background: url('../images/backgrounds/download-background.jpg') center center no-repeat;
   background-size: cover;
+}
+
+.modal-dialog {
+  max-width: 1040px;
 }
 
 .map iframe {
