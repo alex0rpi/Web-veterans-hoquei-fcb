@@ -1,0 +1,252 @@
+<%- include('../includes/header.ejs') %>
+<body>
+  <%- include('../includes/navigation.ejs') %>
+     <!-- Header -->
+     <header class="header" id="inici">
+      <!-- Hero1 -->
+      <div class="hero text-white pt-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-container mb-5 px-4 text-center">
+                <img
+                  src="/images/pictures/llibre1.png"
+                  alt=""
+                  class="img-fluid"
+                  width="450px"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="text-container p-3 d-flex flex-column justify-content-center h-80 mb-6"
+              >
+                <h1 class="display-3 fw-bold">Web pel llibre de l'associació</h1>
+                <h3 class="construction">🚧 Actualment en construcció 🚧</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rem nemo
+                  facere quidem voluptate in eum quae beatae accusamus nostrum minima
+                  impedit iure, cumque saepe optio esse officiis blanditiis eaque non.
+                </p>
+
+                <!-- Form -->
+                <div class="form-container text-center">
+                  <form>
+                    <div class="d-grid">
+                      <!-- El link del drive s'ha de convertir en un link de descarrega -->
+                      <a
+                        class="btn btn-primary btn-lg text-white"
+                        href="https://drive.google.com/uc?export=download&id=1QhX_frK593mESvebfQm_zzcLOQ5jL5qp"
+                        download="Document_de_prova.pdf"
+                        >Descarrega'l</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Icons -->
+    <section class="icons bg-light pb-2">
+      <div class="container">
+        <div class="row hstack g-4">
+          <div class="col-md-4 d-flex gap-4">
+            <i class="fa-solid fa-hockey-puck fa-3x text-primary"></i>
+            <div>
+              <h5 class="fw-bold">Des dels inicis fins a l'actualitat</h5>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ut ab
+                sit, quod modi iste? Amet deserunt quos obcaecati laudantium.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex gap-4">
+            <i class="fa-solid fa-hockey-puck fa-3x text-primary"></i>
+
+            <div>
+              <h5 class="fw-bold">Amb fotos històriques i documents inèdits</h5>
+              <p class="text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit illum quo
+                ipsum, alias maxime hic veniam eveniet ullam accusamus voluptates?
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex gap-4">
+            <i class="fa-solid fa-hockey-puck fa-3x text-primary"></i>
+
+            <div>
+              <h5 class="fw-bold">Amb totes les dades per temporades</h5>
+              <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, rem?
+                Earum suscipit provident eaque illum necessitatibus id a labore illo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section id="details" class="details my-2">
+      <div class="container pt-4 d-flex flex-column align-items-center">
+        <h1 class="display-6 text-center">Text de títol</h1>
+        <p>
+          Aquí podriem afegir imatges del contingut del llibre a mode de teaser. 3 o 4
+          imatges, o les que vulguem. Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="image-container mb-4">
+          <img
+            src="images/pictures/llibre_obert.jpg"
+            alt="image"
+            width="500px"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonis llibre -->
+    <section class="testimonials mb-4 bg-light">
+      <div class="container">
+        <div class="row pt-4">
+          <h1 class="text-center">Testimonis</h1>
+          <div class="col-md-4 text-center">
+            <img
+              src="images/pictures/ramon-pons.jpg"
+              alt=""
+              class="rounded-circle mb-3"
+              height="120px"
+            />
+            <p class="lead fst-italic">
+              "Aquest es el meu comentari sobre aquest llibre."
+            </p>
+            <p class="fw-bold">Ramon Pons, President de l'associació.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="images/pictures/antoni-orpinell.jpg"
+              alt=""
+              class="rounded-circle mb-3"
+              height="120px"
+            />
+            <p class="lead fst-italic">
+              "Aquest es el meu comentari sobre aquest llibre."
+            </p>
+            <p class="fw-bold">Antoni Orpinell, membre de la junta.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="images/pictures/carles-gallen.jpeg"
+              alt=""
+              class="rounded-circle mb-3"
+              height="120px"
+            />
+            <p class="lead fst-italic">
+              "Aquest es el meu comentari sobre aquest llibre."
+            </p>
+            <p class="fw-bold">Carles Gallén Utset</p>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Interest links -->
+     <section id="interest-links" class="my-2 bg-light py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h1 class="display-6 text-center">Enllaços d'interès</h1>
+            <p>
+              Aquí podriem afegir alguns enllaços a llocs web o notícies a les quals s'ha
+              mencionat l'associació o el llibre.
+            </p>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <a
+                href="https://veteransbasquetfcb.com/actividad/presentacio-llibre-historia-hoquei-patins-fcbarcelona/"
+                >Link al web de veterans de basquet</a
+              >
+              <a
+                href="https://www.fcbarcelona.cat/ca/hoquei-patins/primer-equip/noticies/1134555/es-presenta-lassociacio-de-veterans-del-barca-dhoquei-patins"
+                >Link al web del FCB</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="location my-4" id="location">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h1 class="display-6 text-center">On ens trobem</h1>
+            <p class="mb-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid deserunt
+              recusandae iure officiis quia saepe at velit ad eum tenetur magnam, nihil
+              voluptate sit totam ut reiciendis iusto harum doloribus.
+            </p>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2667.082653831765!2d2.1198797544514036!3d41.3806298105058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCamp%20Nou!5e0!3m2!1ses-419!2ses!4v1690207585290!5m2!1ses-419!2ses"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact bg-light pb-4" id="contacte">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 pt-4">
+            <h1 class="text-center">Contacte</h1>
+            <form action="https://formspree.io/f/mzbljkgl" method="POST">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-md"
+                  name="name"
+                  placeholder="Nom i cognoms"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-md"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control form-control-md"
+                  name="message"
+                  rows="4"
+                  placeholder="Missatge"
+                ></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary text-white mt-2">
+                  Envia
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <%- include('../includes/footer.ejs') %>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+  </html>
