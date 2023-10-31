@@ -1,0 +1,21 @@
+<%- include('../includes/header.ejs') %>
+<body>
+  <%- include('../includes/navigation.ejs') %>
+
+  <div class="container-md">
+    <div class="mb-3">
+        <label for="email" class="form-label">Adreça email</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        <label for="password" class="form-label">Contrasenya</label>
+        <input type="password" class="form-control" id="password">
+        <label for="confirm-password" class="form-label">Confirma contrasenya</label>
+        <input type="password" class="form-control" id="confirm-password">
+      </div>
+  </div>
+
+
+  <%- include('../includes/footer.ejs') %>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
