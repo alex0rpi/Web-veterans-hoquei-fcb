@@ -1,18 +1,37 @@
 <%- include('../includes/header.ejs') %>
 <body>
-  <%- include('../includes/navigation.ejs') %>
+  <div class="position-fixed h-100 w-100 bg-primary">
+    <%- include('../includes/adminNavigation.ejs') %>
+    <div class="container-lg mt-6 bg-light p-4 rounded-4">
+      <form action="/auth/login" method="post">
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="emailInput"
+            placeholder="name@example.com"
+          />
+          <label for="emailInput">Email address</label>
+        </div>
 
-  <div class="container-sm">
-    <form class="mb-3" action="/auth/login" method="POST">
-        <label for="email" class="form-label">Adreça email</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        <label for="password" class="form-label">Contrasenya</label>
-        <input type="password" class="form-control" id="password">
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="passwordInput"
+            placeholder="Password"
+          />
+          <label for="passwordInput">Password</label>
+        </div>
         <button type="submit" class="btn mt-4 btn-primary">Inicia sessió</button>
     </form>
+    <h4 class="mt-3">No tens compte? Regístre't</h4>
+    <a href="/auth/register" >
+        <button type="button" class="btn btn-primary">Registrar-me</button>
+    </a>
+    </div>
+    
   </div>
-
-
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
