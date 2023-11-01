@@ -5,11 +5,12 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import mainRoutes from './src/routes/mainRoutes.js';
 import authRoutes from './src/routes/authRoutes.js';
+import connectDB from './src/config/db.js';
 
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 
 // set public as static folder
 const __filename = fileURLToPath(import.meta.url);
@@ -24,4 +25,4 @@ app.use('/', mainRoutes);
 app.use('/', authRoutes);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+connectDB().then(app.listen(PORT, () => console.log(`Server running on port ${PORT}`)));

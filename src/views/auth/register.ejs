@@ -3,15 +3,17 @@
   <div class="position-fixed h-100 w-100 bg-primary">
     <%- include('../includes/adminNavigation.ejs') %>
     <div class="container-lg mt-6 bg-light p-4 rounded-4">
-      <form action="/auth/login" method="post">
+      <form action="/auth/register" method="post">
         <div class="form-floating mb-3">
           <input
             type="email"
             class="form-control"
             id="emailInput"
             placeholder="name@example.com"
+            required
+            name="email"
           />
-          <label for="emailInput">Email address</label>
+          <label for="emailInput">Adreça email</label>
         </div>
         <div class="form-floating mb-3">
           <input
@@ -19,6 +21,10 @@
             class="form-control"
             id="nameInput"
             placeholder="name@example.com"
+            required
+            minlength="2"
+            maxlength="50"
+            name="name"
           />
           <label for="nameInput">El teu nom</label>
         </div>
@@ -26,12 +32,29 @@
           <input
             type="password"
             class="form-control"
-            id="passwordInput"
+            id="password"
             placeholder="Password"
+            required
+            minlength="6"
+            maxlength="50"
+            name="password"
           />
-          <label for="passwordInput">Password</label>
+          <label for="password">Contrasenya</label>
         </div>
-        <button type="submit" class="btn mt-4 btn-primary">Registrar</button>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="confirm_password"
+            placeholder="Password"
+            required
+            minlength="6"
+            maxlength="50"
+            name="confirm_password"
+          />
+          <label for="confirm_password">Confirma contrasenya</label>
+        </div>
+        <button type="submit" class="btn mt-4 btn-primary" required>Registrar</button>
       </form>
       <h4 class="mt-3">Ja tens un compte? Inicia sessió</h4>
     <a href="/auth/login" >

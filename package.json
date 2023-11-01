@@ -5,8 +5,8 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
-    "sass:watch": "sass --no-source-map --watch scss:css",
+    "sass:build": "sass --no-source-map public/scss:public/css",
+    "sass:watch": "sass --no-source-map --watch public/scss:public/css",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
