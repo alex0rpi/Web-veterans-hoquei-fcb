@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import express from 'express';
 import User from '../models/User.js';
+import jwt from 'jsonwebtoken';
 
 const router = express.Router();
 
@@ -20,25 +21,25 @@ router.post('/auth/register', async (req, res) => {
   const saltRounds = 12;
   const hashedPassword = await bcrypt.hash(password, saltRounds);
   await User.create({ email, name, password: hashedPassword });
-  return res.status(204).send();
+  return res.status(204).redirect('/auth/login');
 });
 
 router.post('/auth/login', async (req, res) => {
-  const { email, password } = req.body;
+  try {
+    const { email, password } = req.body;
+    const user = await User.findOne({ email });
+    if (!user) return res.json({ message: 'User does not exist.' });
+    const match = await bcrypt.compare(password, user.password);
+    if (!match) return res.json({ message: 'Invalid credentials' });
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+    req.session.isLoggedIn = true;
+    res.cookie('token', token, { maxAge: 1000 * 60 * 60, httpOnly: true });
+    // if we deploy this app, we should add the property secure: true to the cookie
 
-  const existingUser = await User.findOne({ email });
-
-  if (!existingUser) {
-    return res.json({ message: 'User does not exist.' });
+    res.status(204).redirect('/admin/user-posts');
+  } catch (error) {
+    res.json({ message: error.message });
   }
-
-  const match = await bcrypt.compare(password, existingUser.password);
-  if (!match) {
-    return res.json({ message: 'Invalid credentials' });
-  }
-  await User.create({ name, email, password: hashedPassword });
-  // crear token, store in cookies etc.
-  res.status(204).render('post/userPosts');
 });
 
 export default router;

@@ -1,0 +1,42 @@
+<%- include('../includes/header.ejs') %>
+    <body>
+        <div class="position-fixed h-100 w-100 bg-primary">
+        <%- include('../includes/adminNavigation.ejs') %>
+            <div class="container-lg mt-6 bg-light p-4 rounded-4">
+              <a href="/admin/user-posts">&larr; Enrere</a><br/>
+              <form action="/admin/create-post" method="post" class="row g-2">
+                <div class="mb-3 col-md-6">
+                  <label for="season" class="form-label">Temporada</label>
+                  <select id="season" class="form-select" name="season">
+                    <option selected>2023-2024</option>
+                    <option>2022-2023</option>
+                    <option>2021-2022</option>
+                    <option>2020-2019</option>
+                  </select>
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="post-title" class="form-label">Títol de la publicació</label>
+                  <input type="text" class="form-control" id="post-title" placeholder="Títol de la publicació" required name="title">
+                </div>
+                <div class="mb-3 col-md-12">
+                  <label for="post-summary" class="form-label">Resum</label>
+                  <input type="text" class="form-control" id="post-summary" placeholder="Resum en una frase de la publicació" required name="summary">
+                </div>
+                <div class="mb-3" class="col-md-12">
+                  <label for="post-content" class="form-label">Text</label>
+                  <textarea class="form-control" id="post-content" rows="5" required placeholder="Text de la publicació" name="content"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <label for="formFile" class="form-label">Penjar una imatge</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <button type="submit" class="btn mt-4 btn-primary">PENJA</button>
+                </div>
+              </form>
+            </div>
+            
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

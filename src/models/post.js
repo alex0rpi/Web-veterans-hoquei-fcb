@@ -8,6 +8,13 @@ const userSchema = new mongoose.Schema({
       message: 'Season is required',
     },
   },
+  slug: {
+    type: String,
+    required: {
+      value: true,
+      message: 'Slug is required',
+    },
+  },
   title: {
     type: String,
     required: {
@@ -26,4 +33,4 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model('User', userSchema);
+export default mongoose.model('Post', userSchema);
