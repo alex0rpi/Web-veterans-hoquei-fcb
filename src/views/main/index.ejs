@@ -3,55 +3,65 @@
   <%- include('../includes/navigation.ejs') %>
      <!-- Header -->
      <header class="header" id="inici">
-      <!-- Hero1 -->
       <div class="hero text-white pt-7">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image-container mb-5 px-4 text-center">
-                <img
-                  src="/images/pictures/llibre1.png"
-                  alt=""
-                  class="img-fluid"
-                  width="450px"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div
-                class="text-container p-3 d-flex flex-column justify-content-center h-80 mb-6"
+        <div class="container-md">
+          <div
+                class="text-container p-3 d-flex flex-column justify-content-center h-80 mb-2"
               >
-                <h1 class="display-3 fw-bold">Web pel llibre de l'associació</h1>
-                <h3 class="construction">🚧 Actualment en construcció 🚧</h3>
+                <h2 class="display-4 fw text-center">Benvinguts al portal de</h2>
+                <h2 class="display-5 fw-bold text-center">Associació de Veterans d'Hoquei Patins del FCB</h2>
+                <h3 class="construction text-center">🚧 Actualment en construcció 🚧</h3>
                 <p class="lead">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rem nemo
                   facere quidem voluptate in eum quae beatae accusamus nostrum minima
                   impedit iure, cumque saepe optio esse officiis blanditiis eaque non.
                 </p>
-
-                <!-- Form -->
                 <div class="form-container text-center">
                   <form>
-                    <div class="d-grid">
+                    <div class="d-grid w-50 mx-auto">
                       <!-- El link del drive s'ha de convertir en un link de descarrega -->
                       <a
                         class="btn btn-primary btn-lg text-white"
                         href="https://drive.google.com/uc?export=download&id=1QhX_frK593mESvebfQm_zzcLOQ5jL5qp"
                         download="Document_de_prova.pdf"
-                        >Descarrega'l</a
+                        >Descarrega el llibre</a
                       >
                     </div>
                   </form>
                 </div>
-              </div>
-            </div>
           </div>
+            <div id="carouselFotos" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselFotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselFotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselFotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner text-center" >
+                <div class="carousel-item active">
+                  <img src="/images/pictures/foto01.png" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/pictures/foto02.png" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="/images/pictures/foto03.png" class="d-block w-50 mx-auto" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>       
         </div>
       </div>
     </header>
 
     <!-- Icons -->
-    <section class="icons bg-light pb-2">
+    <section class="icons bg-light pb-2 pt-5">
       <div class="container">
         <div class="row hstack g-4">
           <div class="col-md-4 d-flex gap-4">
