@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/admin/user-posts', authenticate, async (req, res) => {
   const user = req.session.user;
   try {
-    const posts = await Post.find({ author: user.userId }).sort({ createdAt: -1 }).exec();
+    const posts = await Post.find({ author: user.userId }).sort({ season: -1 }).exec();
     // console.log('posts: ', posts);
     // send the posts array to the view 'admin/userPosts'
 
