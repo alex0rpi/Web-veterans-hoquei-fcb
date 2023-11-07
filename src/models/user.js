@@ -23,4 +23,10 @@ const userSchema = new mongoose.Schema({
   ],
 });
 
+// Middleware to delete user's posts when user is removed
+userSchema.pre('remove', function (next) {
+  Post.deleteMany({ author: this._id }).exec();
+  next();
+});
+
 export default mongoose.model('User', userSchema);

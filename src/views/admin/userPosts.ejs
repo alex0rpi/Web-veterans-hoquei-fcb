@@ -3,10 +3,27 @@
         <div class="position-fixed h-100 w-100 bg-primary">
         <%- include('../includes/adminNavigation.ejs') %>
             <div class="container-lg mt-6 bg-light p-4 rounded-4">
-            <h1>Aquí aniràn els posts de l'usuari connectat</h1>
+              <h2>Llistat de contribucions:</h2>
+              <div class="accordion" id="accordionPosts">
+                <% posts.forEach((post,index) => { %>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%=index%>" aria-expanded="true" aria-controls="collapse<%=index%>">
+                      <strong><%= post.title %></strong>
+                    </button>
+                    </h2>
+                    <div id="collapse<%=index%>" class="accordion-collapse collapse" data-bs-parent="#accordionPosts">
+                      <div class="accordion-body">
+                        <%= post.content %>
+                      </div>
+                    </div>
+                  </div>
+                <% }) %>
+              </div>
             </div>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/script.js"></script>
+        <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/script.js"></script>
     </body>
 </html>

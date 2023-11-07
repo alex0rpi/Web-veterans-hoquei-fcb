@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const userSchema = new mongoose.Schema({
+const postSchema = new mongoose.Schema({
   season: {
     type: String,
     required: {
@@ -33,4 +33,4 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-export default mongoose.model('Post', userSchema);
+export default mongoose.model('Post', postSchema);

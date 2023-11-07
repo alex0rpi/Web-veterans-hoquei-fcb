@@ -111,13 +111,23 @@
           imatges, o les que vulguem. Lorem, ipsum dolor sit amet consectetur adipisicing
           elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <div class="image-container mb-4">
-          <img
-            src="images/pictures/llibre_obert.jpg"
-            alt="image"
-            width="500px"
-            class="img-fluid"
-          />
+        <div class="container-md text-center d-md-flex gap-3 justify-content-center">
+          <div class="mb-3">
+              <img
+                src="/images/pictures/llibre_obert.jpg"
+                alt="image"
+                class="max-width-150 min-with-150"
+                style="max-height: 250px;"
+              />
+            </div>
+            <div>
+              <img
+                src="/images/pictures/foto04.png"
+                alt="image"
+                class="max-width-150 min-with-100"
+                style="max-height: 250px;"
+              />
+          </div>  
         </div>
       </div>
     </section>
@@ -172,7 +182,7 @@
         <div class="row justify-content-center">
           <div class="col-10 ">
             <h1 class="display-6 text-center">Enllaços d'interès</h1>
-            <p>
+            <p class="text-center">
               Aquí podriem afegir alguns enllaços a llocs web o notícies a les quals s'ha
               mencionat l'associació o el llibre.
             </p>
@@ -257,7 +267,7 @@
     </section>
 
   <%- include('../includes/footer.ejs') %>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/script.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/script.js"></script>
     </body>
   </html>

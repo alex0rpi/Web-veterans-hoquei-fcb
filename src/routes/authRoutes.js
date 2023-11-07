@@ -31,8 +31,8 @@ router.post('/auth/login', async (req, res) => {
     if (!user) return res.json({ message: 'User does not exist.' });
     const match = await bcrypt.compare(password, user.password);
     if (!match) return res.json({ message: 'Invalid credentials' });
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
-    req.session.isLoggedIn = true;
+    const token = jwt.sign({ userId: user._id, name: user.name }, process.env.JWT_SECRET);
+    req.session.user = user;
     res.cookie('token', token, { maxAge: 1000 * 60 * 60, httpOnly: true });
     // if we deploy this app, we should add the property secure: true to the cookie
 
@@ -40,6 +40,12 @@ router.post('/auth/login', async (req, res) => {
   } catch (error) {
     res.json({ message: error.message });
   }
+});
+
+router.post('/auth/logout', (req, res) => {
+  req.session.destroy();
+  res.clearCookie('token');
+  res.status(204).redirect('/auth/login');
 });
 
 export default router;

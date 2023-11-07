@@ -170,6 +170,16 @@
   border: none;
 }
 
+#accordionPosts {
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+.accordion-button:hover {
+  background-color: #1b3252;
+  color: #f3f6f9;
+}
+
 @media (max-width: 1000px) {
   .hero .image-container {
     display: flex;
