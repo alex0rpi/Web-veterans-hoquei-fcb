@@ -1,14 +1,15 @@
 # Bootstrap website for downloading a free pdf book.
 
-To visit the web in progres you can click on the temporary vercel domain page: <br>
-https://web-llibre-veterans-hoquei-fcb.vercel.app/
+This is a preliminary project aimed at the association for them to go ahead with the development of their website.
+Since their acceptance, I've reworked the tech stack used, and I created a new repository for it.
+<a href="https://github.com/alex0rpi/web-veterans-hoquei.git">New repository HERE</a>
 
-<img src="./images/llibre1.png.png"  />
+The following is the description of the initial project, which due to a complexity increase I decided to level up.
 
 ## Features
 
 - Modern layout with custom colors/styles/backgrounds
-- Responsive design
+- Responsive design (yeah, obvious)
 - Sticky navbar with style changes on scroll
 - Bootstrap modals
 - Form & input styles
